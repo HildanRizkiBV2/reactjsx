@@ -4,3 +4,4 @@ function App(){
     <div>Tes</div>
     )
 }
+export default App
