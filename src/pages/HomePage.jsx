@@ -24,6 +24,16 @@ const HomePage = () => {
          </Row>
         </Container>
       </header>
+      <div className="kelas d-flex min-vh-100">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="text-center fw-bold" >Kelas terbaru</h1>
+              <p className="text-center" >Lorem ipsum dolor sit amet.</p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
     );
 }
