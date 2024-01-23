@@ -2,6 +2,7 @@ import { Row ,Container , Col} from 'react-bootstrap';
 import HeroImage from '../assets/img/hero.png'
 import Typewriter from 'typewriter-effect';
 import cursor from 'typewriter-effect';
+import { kelasTerbaru } from '../data/index.js';
 
 const HomePage = () => {
 
@@ -31,6 +32,20 @@ const HomePage = () => {
               <h1 className="text-center fw-bold" >Kelas terbaru</h1>
               <p className="text-center" >Lorem ipsum dolor sit amet.</p>
             </Col>
+          </Row>
+          <Row>
+          {kelasTerbaru.map((kelas) => {
+            return(
+            <Col key={kelas.id}>
+              <img src={kelas.image} alt="unsplash.com" />
+              <i className={kelas.star1}></i>
+              <i className={kelas.star2}></i>
+              <i className={kelas.star3}></i>
+              <i className={kelas.star4}></i>
+              <i className={kelas.star5}></i>
+            </Col>
+              )
+          })}
           </Row>
         </Container>
       </div>
