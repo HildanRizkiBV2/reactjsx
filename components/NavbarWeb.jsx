@@ -1,11 +1,28 @@
 import { Navbar ,Container ,Nav ,NavDropdown} from 'react-bootstrap';
 import { navLinks } from '../src/data/index.js';
 import { NavLink } from 'react-router-dom';
+import { useState ,useEffect } from 'react'
+
 const NavbarWeb = () => {
+     const [ changeColor, setChangeColor ] = useState(false);
+    const changeBackgroundColor = () => {
+      if(window.scrollY > 10 ){
+        setChangeColor(true);
+      }else{
+        setChangeColor(false);
+      }
+    };
+  
+  useEffect(() => {
+    changeBackgroundColor();
+    
+    window.addEventListener("scroll",  changeBackgroundColor );
+  });
+  
   return(
     <>
     <div>
-    <Navbar expand="lg" >
+    <Navbar expand="lg" className={changeColor ? "color-active" : ""} >
       <Container>
         <Navbar.Brand href="#home">Koclok <span>Course</span> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

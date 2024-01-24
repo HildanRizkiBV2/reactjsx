@@ -25,7 +25,7 @@ const HomePage = () => {
          </Row>
         </Container>
       </header>
-      <div className="kelas d-flex min-vh-100">
+      <div className="kelas d-flex min-vh-100 ">
         <Container>
           <Row>
             <Col>
