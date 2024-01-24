@@ -3,6 +3,7 @@ import HeroImage from '../assets/img/hero.png'
 import Typewriter from 'typewriter-effect';
 import cursor from 'typewriter-effect';
 import { kelasTerbaru } from '../data/index.js';
+import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
 
