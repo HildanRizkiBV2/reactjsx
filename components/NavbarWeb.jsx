@@ -31,7 +31,9 @@ const NavbarWeb = () => {
           {navLinks.map((link) => {
             return(
               <div key={link.id} className="nav-link">
-                <NavLink to={link.path}>{link.text}</NavLink>
+                <NavLink to={link.path} className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "active" : ""
+  } end >{link.text}</NavLink>
               </div>
             )
           })}

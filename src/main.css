@@ -15,10 +15,11 @@
   font-weight:500;
   text-decoration:none;
 }
-.navbar .navlink a:hover{
-  color:#dc3545;
+.navbar .nav-link a:hover{
+  background-color:#dc3545;
+  color:white;
 }
-.navbar .navlink .active {
+.navbar .nav-link .active {
   background-color:#dc3545;
   color:white;
 }
