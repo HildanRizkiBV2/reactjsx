@@ -1,5 +1,6 @@
 import { Routes ,Route } from 'react-router-dom';
 import NavbarWeb from '../components/NavbarWeb.jsx'
+import FooterWeb from '../components/FooterWeb.jsx'
 import HomePage from './pages/HomePage.jsx';
 import KelasPage from './pages/KelasPage.jsx';
 import TestimonialPage from './pages/TestimonialPage.jsx';
@@ -18,6 +19,7 @@ function App(){
           <Route path="/reactjsx/faq" Component={FaqPage} />
           <Route path="/reactjsx/syaratketen" Component={SyarkenPage} />
         </Routes>
+        <FooterWeb />
     </div>
     )
 }

@@ -1,4 +1,4 @@
-import { Row ,Container , Col} from 'react-bootstrap';
+import { Row ,Container ,Col } from 'react-bootstrap';
 import HeroImage from '../assets/img/hero.png'
 import Typewriter from 'typewriter-effect';
 import cursor from 'typewriter-effect';

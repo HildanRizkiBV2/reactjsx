@@ -68,3 +68,22 @@ header {
 .homepage .kelas .row:nth-child(2) .star {
   color:gold;
 }
+.footer .no a,
+.footer .email a {
+  display:flex;
+  align-Items:center;
+  color:black;
+  column-gap: 5px;
+}
+.footer .nav-link a{
+  text-decoration:none;
+}
+.footer .menu a{
+  text-decoration:none;
+  color:black;
+}
+.footer .row:nth-child(1){
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:5px;
+}
